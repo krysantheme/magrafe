@@ -1,0 +1,448 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcome to Rafal & Maged's Wedding</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="[fonts.googleapis.com](https://fonts.googleapis.com)">
+    <link href="[fonts.googleapis.com](https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;1,400&family=Montserrat:wght@300;400;500&display=swap)" rel="stylesheet">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="nav">
+        <div class="nav-container">
+            <a href="#accueil" class="nav-logo">R & M</a>
+            <ul class="nav-menu">
+                <li><a href="#accueil">Reception</a></li>
+                <li><a href="#notre-histoire">Him and I</a></li>
+                <li><a href="#informations">Informations</a></li>
+                <li><a href="#programme">Program</a></li>
+                <li><a href="#rsvp">RSVP</a></li>
+            </ul>
+            <button class="nav-toggle" aria-label="Menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <header id="accueil" class="hero">
+        <div class="hero-overlay"></div>
+        <div class="hero-content">
+            <p class="hero-subtitle">Nous nous marions</p>
+            <h1 class="hero-title">Rafal <span>&</span> Maged</h1>
+            <div class="hero-date">
+                <span class="date-day">29</span>
+                <span class="date-month">August</span>
+                <span class="date-year">2026</span>
+            </div>
+            <div class="hero-countdown" id="countdown">
+                <div class="countdown-item">
+                    <span class="countdown-number" id="days">--</span>
+                    <span class="countdown-label">Days</span>
+                </div>
+                <div class="countdown-item">
+                    <span class="countdown-number" id="hours">--</span>
+                    <span class="countdown-label">Hours</span>
+                </div>
+                <div class="countdown-item">
+                    <span class="countdown-number" id="minutes">--</span>
+                    <span class="countdown-label">Minutes</span>
+                </div>
+                <div class="countdown-item">
+                    <span class="countdown-number" id="seconds">--</span>
+                    <span class="countdown-label">Seconds</span>
+                </div>
+            </div>
+            <a href="#rsvp" class="btn btn-primary">Confirm your presence</a>
+        </div>
+        <div class="scroll-indicator">
+            <span>Discover</span>
+            <div class="scroll-arrow"></div>
+        </div>
+    </header>
+
+    <!-- Notre Histoire -->
+    <section id="notre-histoire" class="section section-story">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-subtitle">Comment tout a commencé</span>
+                <h2 class="section-title">Him and I</h2>
+                <div class="title-decoration"></div>
+            </div>
+            <div class="story-content">
+                <div class="story-image">
+                    <div class="image-frame">
+                        <div class="image-placeholder">
+                            <img src="RetM.jpg">
+                        </div>
+                    </div>
+                </div>
+                <div class="story-text">
+                    <p>Nous nous sommes rencontrés un soir d'été 2020, lors d'une soirée chez des amis communs. Ce qui devait être une simple conversation s'est transformé en une discussion passionnée qui a duré toute la nuit.</p>
+                    <p>Depuis ce jour, nous ne nous sommes plus quittés. Après cinq années de bonheur, de voyages et de projets partagés, nous avons décidé de franchir une nouvelle étape ensemble.</p>
+                    <p>C'est avec une immense joie que nous vous invitons à célébrer notre union et à partager ce moment unique avec nous.</p>
+                    <div class="signature">Rafal & Maged</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Timeline -->
+    <section class="section section-timeline">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-subtitle">Les moments clés</span>
+                <h2 class="section-title">Notre Parcours</h2>
+                <div class="title-decoration"></div>
+            </div>
+            <div class="timeline">
+                <div class="timeline-item">
+                    <div class="timeline-date">Juillet 2020</div>
+                    <div class="timeline-content">
+                        <h3>Notre rencontre</h3>
+                        <p>Une soirée d'été qui a changé nos vies</p>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-date">Décembre 2021</div>
+                    <div class="timeline-content">
+                        <h3>Notre premier voyage</h3>
+                        <p>Une semaine magique en Italie</p>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-date">Mars 2023</div>
+                    <div class="timeline-content">
+                        <h3>Notre emménagement</h3>
+                        <p>Notre premier chez-nous ensemble</p>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-date">Février 2025</div>
+                    <div class="timeline-content">
+                        <h3>La demande</h3>
+                        <p>Un moment inoubliable à Paris</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Informations pratiques -->
+    <section id="informations" class="section section-info">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-subtitle">Everything you need to know</span>
+                <h2 class="section-title">Practical Information</h2>
+                <div class="title-decoration"></div>
+            </div>
+            <div class="info-grid">
+                <div class="info-card">
+                    <div class="info-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                            <path d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4"/>
+                        </svg>
+                    </div>
+                    <h3>Cérémonie Civile</h3>
+                    <p class="info-time">12:00</p>
+                    <p class="info-location">Commune de Morlanwelz</p>
+                    <p class="info-address">2 Rue Raoul Warocqué <br>7140 Morlanwelz</p>
+                    <a href="[maps.google.com](https://maps.google.com)" target="_blank" class="btn btn-outline btn-small">Voir sur la carte</a>
+                </div>
+                <div class="info-card">
+                    <div class="info-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                            <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"/>
+                        </svg>
+                    </div>
+                    <h3>Cérémonie Religieuse</h3>
+                    <p class="info-time">14h00</p>
+                    <p class="info-location">Église Saint-Sulpice</p>
+                    <p class="info-address">2 rue Palatine<br>75006 Paris</p>
+                    <a href="[maps.google.com](https://maps.google.com)" target="_blank" class="btn btn-outline btn-small">Voir sur la carte</a>
+                </div>
+                <div class="info-card">
+                    <div class="info-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                            <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/>
+                            <circle cx="12" cy="10" r="3"/>
+                        </svg>
+                    </div>
+                    <h3>Reception</h3>
+                    <p class="info-time">À partir de 15h00</p>
+                    <p class="info-location">Château de Fontainebleau</p>
+                    <p class="info-address">77300 Fontainebleau</p>
+                    <a href="[maps.google.com](https://maps.google.com)" target="_blank" class="btn btn-outline btn-small">Voir sur la carte</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Programme -->
+    <section id="programme" class="section section-programme">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-subtitle">Le déroulé de la journée</span>
+                <h2 class="section-title">Program</h2>
+                <div class="title-decoration"></div>
+            </div>
+            <div class="programme-list">
+                <div class="programme-item">
+                    <div class="programme-time">10h30</div>
+                    <div class="programme-content">
+                        <h3>Cérémonie civile</h3>
+                        <p>Mairie du 6ème arrondissement</p>
+                    </div>
+                </div>
+                <div class="programme-item">
+                    <div class="programme-time">12h00</div>
+                    <div class="programme-content">
+                        <h3>Vin d'honneur</h3>
+                        <p>Jardin du Luxembourg</p>
+                    </div>
+                </div>
+                <div class="programme-item">
+                    <div class="programme-time">14h00</div>
+                    <div class="programme-content">
+                        <h3>Cérémonie religieuse</h3>
+                        <p>Église Saint-Sulpice</p>
+                    </div>
+                </div>
+                <div class="programme-item">
+                    <div class="programme-time">17h00</div>
+                    <div class="programme-content">
+                        <h3>Cocktail</h3>
+                        <p>Château de Fontainebleau</p>
+                    </div>
+                </div>
+                <div class="programme-item">
+                    <div class="programme-time">20h00</div>
+                    <div class="programme-content">
+                        <h3>Dîner</h3>
+                        <p>Salle des réceptions</p>
+                    </div>
+                </div>
+                <div class="programme-item">
+                    <div class="programme-time">23h00</div>
+                    <div class="programme-content">
+                        <h3>Soirée dansante</h3>
+                        <p>Jusqu'au bout de la nuit !</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Hébergements -->
+    <section class="section section-accommodation">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-subtitle">Where to stay ?</span>
+                <h2 class="section-title">Accommodation</h2>
+                <div class="title-decoration"></div>
+            </div>
+            <p class="section-intro">We hope you'll have great time here in Belgium</p>
+            <div class="accommodation-grid">
+                <div class="accommodation-card">
+                    <h3>Hôtel & Spa du Château</h3>
+                    <p class="accommodation-stars">★★★★</p>
+                    <p>À 5 minutes du lieu de réception</p>
+                    <p class="accommodation-price">À partir de 120€/nuit</p>
+                    <a href="tel:+33100000000" class="btn btn-outline btn-small">Réserver</a>
+                </div>
+                <div class="accommodation-card">
+                    <h3>Auberge de la Forêt</h3>
+                    <p class="accommodation-stars">★★★</p>
+                    <p>À 10 minutes du lieu de réception</p>
+                    <p class="accommodation-price">À partir de 85€/nuit</p>
+                    <a href="tel:+33100000000" class="btn btn-outline btn-small">Réserver</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Dress Code -->
+    <section class="section section-dresscode">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-subtitle">Pour être au diapason</span>
+                <h2 class="section-title">Dresscode</h2>
+                <div class="title-decoration"></div>
+            </div>
+            <div class="dresscode-content">
+                <div class="dresscode-item">
+                    <h3>Misters</h3>
+                    <p>Costume de ville ou smoking. Cravate ou nœud papillon apprécié.</p>
+                </div>
+                <div class="dresscode-divider"></div>
+                <div class="dresscode-item">
+                    <h3>Misses</h3>
+                    <p>Robe de cocktail ou longue. Évitez le blanc et le noir, s'il vous plaît.</p>
+                </div>
+            </div>
+            <p class="dresscode-note">Notre palette : tons neutres, beige, champagne, rose poudré, bleu pâle.</p>
+        </div>
+    </section>
+
+    <!-- RSVP -->
+    <section id="rsvp" class="section section-rsvp">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-subtitle">On vous attend !</span>
+                <h2 class="section-title">Confirm your presence</h2>
+                <div class="title-decoration"></div>
+            </div>
+            <p class="section-intro">Thanks to confirm your presence before <strong>31 Jully 2026</strong>.</p>
+            
+            <form id="rsvp-form" class="rsvp-form">
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="prenom">Name *</label>
+                        <input type="text" id="prenom" name="prenom" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="nom">Surname *</label>
+                        <input type="text" id="nom" name="nom" required>
+                    </div>
+                </div>
+                
+                <div class="form-group">
+                    <label for="email">Email *</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                
+                <div class="form-group">
+                    <label>Serez-vous présent(e) ? *</label>
+                    <div class="radio-group">
+                        <label class="radio-label">
+                            <input type="radio" name="presence" value="oui" required>
+                            <span class="radio-custom"></span>
+                            Oui, avec joie !
+                        </label>
+                        <label class="radio-label">
+                            <input type="radio" name="presence" value="non">
+                            <span class="radio-custom"></span>
+                            Malheureusement non
+                        </label>
+                    </div>
+                </div>
+                
+                <div class="form-group conditional-field" id="guests-field">
+                    <label for="guests">Number of person</label>
+                    <select id="guests" name="guests">
+                        <option value="1">1 personne</option>
+                        <option value="2">2 personnes</option>
+                        <option value="3">3 personnes</option>
+                        <option value="4">4 personnes</option>
+                        <option value="5">5 personnes</option>
+                    </select>
+                </div>
+                
+                <div class="form-group conditional-field" id="events-field">
+                    <label>À quelles parties serez-vous présent(e) ?</label>
+                    <div class="checkbox-group">
+                        <label class="checkbox-label">
+                            <input type="checkbox" name="events[]" value="civil">
+                            <span class="checkbox-custom"></span>
+                            Cérémonie civile (10h30)
+                        </label>
+                        <label class="checkbox-label">
+                            <input type="checkbox" name="events[]" value="religieux">
+                            <span class="checkbox-custom"></span>
+                            Cérémonie religieuse (14h00)
+                        </label>
+                        <label class="checkbox-label">
+                            <input type="checkbox" name="events[]" value="reception">
+                            <span class="checkbox-custom"></span>
+                            Cocktail & Dîner (17h00)
+                        </label>
+                        <label class="checkbox-label">
+                            <input type="checkbox" name="events[]" value="soiree">
+                            <span class="checkbox-custom"></span>
+                            Soirée dansante (23h00)
+                        </label>
+                    </div>
+                </div>
+                
+                <div class="form-group conditional-field" id="dietary-field">
+                    <label for="dietary">Allergies ou régime alimentaire particulier</label>
+                    <textarea id="dietary" name="dietary" rows="2" placeholder="Végétarien, sans gluten, allergies..."></textarea>
+                </div>
+                
+                <div class="form-group">
+                    <label for="message">Un petit mot pour les mariés</label>
+                    <textarea id="message" name="message" rows="4" placeholder="Vos vœux, anecdotes, chansons à passer..."></textarea>
+                </div>
+                
+                <button type="submit" class="btn btn-primary btn-large">Envoyer ma réponse</button>
+            </form>
+            
+            <div id="form-success" class="form-success hidden">
+                <div class="success-icon">✓</div>
+                <h3>Merci pour votre réponse !</h3>
+                <p>Nous avons bien reçu votre confirmation. À très bientôt !</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Liste de mariage -->
+    <section class="section section-gifts">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-subtitle">Si vous le souhaitez</span>
+                <h2 class="section-title">Liste de Mariage</h2>
+                <div class="title-decoration"></div>
+            </div>
+            <div class="gifts-content">
+                <p>Votre présence est notre plus beau cadeau.</p>
+                <p>Toutefois, si vous souhaitez nous gâter, nous avons préparé une liste de mariage et ouvert une cagnotte pour notre voyage de noces.</p>
+                <div class="gifts-buttons">
+                    <a href="#" class="btn btn-primary">Voir la liste</a>
+                    <a href="#" class="btn btn-outline">Participer à la cagnotte</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact -->
+    <section class="section section-contact">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-subtitle">Une question ?</span>
+                <h2 class="section-title">Contactez-nous</h2>
+                <div class="title-decoration"></div>
+            </div>
+            <div class="contact-content">
+                <div class="contact-item">
+                    <h3>Rafal</h3>
+                    <p><a href="tel:+33600000001">06 00 00 00 01</a></p>
+                    <p><a href="mailto:marie@email.com">rafal@email.com</a></p>
+                </div>
+                <div class="contact-item">
+                    <h3>Maged</h3>
+                    <p><a href="tel:+33600000002">06 00 00 00 02</a></p>
+                    <p><a href="mailto:thomas@email.com">maged@email.com</a></p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-names">Rafal & Maged</div>
+            <div class="footer-date">29 August 2026</div>
+            <p class="footer-quote">"L'amour ne se voit pas avec les yeux mais avec le cœur"</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
+<head>
+    <link rel="stylesheet" href="style.css">
+</head>
