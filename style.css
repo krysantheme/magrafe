@@ -11,6 +11,7 @@
     --color-taupe: #B8A99A;
     --color-brown: #8B7355;
     --color-brown-dark: #5C4A35;
+    --color-green:#8a9888;
     
     /* Accents */
     --color-gold: #C9A962;
@@ -43,6 +44,16 @@
     --shadow-sm: 0 2px 8px rgba(139, 115, 85, 0.08);
     --shadow-md: 0 4px 20px rgba(139, 115, 85, 0.12);
     --shadow-lg: 0 8px 40px rgba(139, 115, 85, 0.16);
+}
+.envelope.is-opening .seal {
+  opacity: 0;
+  transform: translate(-50%, -50%) scale(0.72);
+}
+.envelope.is-opening .flap {
+  transition: transform 1.6s cubic-bezier(.22,.8,.2,1);
+}
+.envelope.is-opening .letter {
+  transition: transform 1.6s cubic-bezier(.22,.8,.2,1);
 }
 
 /* Reset */
@@ -133,7 +144,7 @@ p:last-child {
 }
 
 .section-title {
-    color: var(--color-brown-dark);
+    color: var(--color-green);
     margin-bottom: var(--space-sm);
 }
 
@@ -282,7 +293,7 @@ p:last-child {
     justify-content: center;
     align-items: center;
     position: relative;
-    background: linear-gradient(135deg, var(--color-beige-light) 0%, var(--color-cream) 50%, var(--color-beige) 100%);
+    background: var(--color-beige-light);
     overflow: hidden;
 }
 
@@ -293,7 +304,7 @@ p:last-child {
     left: 0;
     right: 0;
     bottom: 0;
-    background-image: url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='[w3.org](http://www.w3.org/2000/svg)'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%23d4c4b0' fill-opacity='0.15'%3E%3Cpath d='M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+    background-image;  
     opacity: 0.5;
 }
 
@@ -481,111 +492,6 @@ p:last-child {
 }
 
 /* ==========================================================================
-   Timeline Section
-   ========================================================================== */
-
-.section-timeline {
-    background: var(--color-beige-light);
-}
-
-.timeline {
-    max-width: 700px;
-    margin: 0 auto;
-    position: relative;
-}
-
-.timeline::before {
-    content: '';
-    position: absolute;
-    left: 50%;
-    top: 0;
-    bottom: 0;
-    width: 2px;
-    background: linear-gradient(180deg, transparent, var(--color-gold), transparent);
-    transform: translateX(-50%);
-}
-
-.timeline-item {
-    display: flex;
-    align-items: center;
-    margin-bottom: var(--space-lg);
-    position: relative;
-}
-
-.timeline-item:nth-child(odd) {
-    flex-direction: row-reverse;
-    text-align: right;
-}
-
-.timeline-item::before {
-    content: '';
-    position: absolute;
-    left: 50%;
-    top: 50%;
-    transform: translate(-50%, -50%);
-    width: 12px;
-    height: 12px;
-    background: var(--color-gold);
-    border-radius: 50%;
-    border: 3px solid var(--color-cream);
-    z-index: 1;
-}
-
-.timeline-date {
-    flex: 1;
-    padding: 0 var(--space-lg);
-    font-family: var(--font-serif);
-    font-size: 1.1rem;
-    color: var(--color-brown);
-}
-
-.timeline-content {
-    flex: 1;
-    padding: var(--space-md);
-    background: var(--color-white);
-    border-radius: 4px;
-    box-shadow: var(--shadow-sm);
-}
-
-.timeline-content h3 {
-    color: var(--color-brown-dark);
-    margin-bottom: var(--space-xs);
-}
-
-.timeline-content p {
-    color: var(--color-text-light);
-    font-size: 0.95rem;
-    margin: 0;
-}
-
-@media (max-width: 768px) {
-    .timeline::before {
-        left: 20px;
-    }
-    
-    .timeline-item,
-    .timeline-item:nth-child(odd) {
-        flex-direction: column;
-        align-items: flex-start;
-        padding-left: 50px;
-        text-align: left;
-    }
-    
-    .timeline-item::before {
-        left: 20px;
-    }
-    
-    .timeline-date {
-        padding: 0;
-        margin-bottom: var(--space-xs);
-    }
-    
-    .timeline-content {
-        width: 100%;
-    }
-}
-
-/* ==========================================================================
    Info Section
    ========================================================================== */
 
@@ -649,49 +555,6 @@ p:last-child {
     margin-bottom: var(--space-md);
 }
 
-/* ==========================================================================
-   Programme Section
-   ========================================================================== */
-
-.section-programme {
-    background: linear-gradient(135deg, var(--color-beige-light) 0%, var(--color-cream) 100%);
-}
-
-.programme-list {
-    max-width: 600px;
-    margin: 0 auto;
-}
-
-.programme-item {
-    display: flex;
-    align-items: flex-start;
-    gap: var(--space-md);
-    padding: var(--space-md) 0;
-    border-bottom: 1px solid var(--color-beige);
-}
-
-.programme-item:last-child {
-    border-bottom: none;
-}
-
-.programme-time {
-    flex-shrink: 0;
-    width: 80px;
-    font-family: var(--font-serif);
-    font-size: 1.25rem;
-    color: var(--color-gold);
-}
-
-.programme-content h3 {
-    color: var(--color-brown-dark);
-    margin-bottom: var(--space-xs);
-}
-
-.programme-content p {
-    color: var(--color-text-light);
-    font-size: 0.95rem;
-    margin: 0;
-}
 
 /* ==========================================================================
    Accommodation Section
@@ -961,31 +824,7 @@ p:last-child {
     margin-bottom: var(--space-sm);
 }
 
-/* ==========================================================================
-   Gifts Section
-   ========================================================================== */
 
-.section-gifts {
-    background: linear-gradient(135deg, var(--color-beige-light) 0%, var(--color-cream) 100%);
-    text-align: center;
-}
-
-.gifts-content {
-    max-width: 600px;
-    margin: 0 auto;
-}
-
-.gifts-content p {
-    color: var(--color-text-light);
-}
-
-.gifts-buttons {
-    display: flex;
-    justify-content: center;
-    gap: var(--space-md);
-    margin-top: var(--space-md);
-    flex-wrap: wrap;
-}
 
 /* ==========================================================================
    Contact Section
@@ -1024,7 +863,7 @@ p:last-child {
    ========================================================================== */
 
 .footer {
-    background: var(--color-brown-dark);
+    background: var(--color-green);
     color: var(--color-cream);
     text-align: center;
     padding: var(--space-lg) var(--space-md);
@@ -1038,7 +877,7 @@ p:last-child {
 
 .footer-date {
     font-size: 1.1rem;
-    color: var(--color-gold);
+    color: var(--color-brown-dark);
     margin-bottom: var(--space-md);
 }
 
